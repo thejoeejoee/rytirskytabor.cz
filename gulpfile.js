@@ -66,19 +66,23 @@ gulp.task('copy', function () {
 });
 
 // Copy all need to deploy to /dist folder
-gulp.task('build', function () {
+gulp.task('build', ['copy'], function () {
     gulp.src([
         'vendor/**/*'
     ]).pipe(gulp.dest('dist/vendor'));
+
     gulp.src([
         'index.html'
     ]).pipe(gulp.dest('dist'));
+
     gulp.src([
         'js/creative.min.js'
     ]).pipe(gulp.dest('dist/js'));
+
     gulp.src([
-        'js/creative.min.css'
+        'css/creative.min.css'
     ]).pipe(gulp.dest('dist/css'));
+
     gulp.src([
         'img/**/*'
     ]).pipe(gulp.dest('dist/img'));
@@ -97,7 +101,7 @@ gulp.task('browserSync', function () {
     })
 });
 
-gulp.task('deploy', function () {
+gulp.task('deploy', ['build'], function () {
     return gulp.src("./dist/**/*")
         .pipe(deploy())
 });
