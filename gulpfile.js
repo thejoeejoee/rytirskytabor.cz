@@ -73,20 +73,23 @@ gulp.task('build', ['copy'], function () {
 
     gulp.src([
         'index.html'
-    ]).pipe(gulp.dest('dist'));
+    ]).pipe(gulp.dest('dist/'));
 
     gulp.src([
         'js/creative.min.js'
-    ]).pipe(gulp.dest('dist/js'));
+    ]).pipe(gulp.dest('dist/js/'));
 
     gulp.src([
         'css/creative.min.css'
-    ]).pipe(gulp.dest('dist/css'));
+    ]).pipe(gulp.dest('dist/css/'));
 
     gulp.src([
         'img/**/*'
-    ]).pipe(gulp.dest('dist/img'));
+    ]).pipe(gulp.dest('dist/img/'));
 
+    gulp.src([
+        'CNAME'
+    ]).pipe(gulp.dest('dist/'));
 });
 
 // Run everything
