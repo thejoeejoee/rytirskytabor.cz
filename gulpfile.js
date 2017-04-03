@@ -104,9 +104,13 @@ gulp.task('browserSync', function () {
     })
 });
 
-gulp.task('deploy', ['build'], function () {
-    return gulp.src("./dist/**/*")
-        .pipe(deploy())
+gulp.task('deploy', function () {
+    return gulp.src([
+        "dist/**/*",
+        'dist/*'
+    ]).pipe(deploy({
+        force: true
+    }))
 });
 
 // Dev task with browserSync
