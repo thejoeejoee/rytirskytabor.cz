@@ -69,7 +69,7 @@ gulp.task('copy', function () {
 gulp.task('build', ['copy'], function () {
     gulp.src([
         'vendor/**/*'
-    ]).pipe(gulp.dest('dist/vendor'));
+    ]).pipe(gulp.dest('dist/vendor/'));
 
     gulp.src([
         'index.html'
@@ -106,8 +106,7 @@ gulp.task('browserSync', function () {
 
 gulp.task('deploy', function () {
     return gulp.src([
-        "dist/**/*",
-        'dist/*'
+        "dist/**/*"
     ]).pipe(deploy({
         force: true
     }))
