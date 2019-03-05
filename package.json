@@ -2,6 +2,9 @@
   "name": "rytirskytabor.cz",
   "title": "Rytirskytabor.cz",
   "version": "1.0.0",
+  "scripts": {
+    "deploy": "gulp build && gulp deploy"
+  },
   "license": {
     "type": "MIT",
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
