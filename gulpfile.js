@@ -88,7 +88,9 @@ gulp.task('build', ['copy'], function () {
     ]).pipe(gulp.dest('dist/img/'));
 
     gulp.src([
-        'CNAME'
+        'CNAME',
+        'poster19.png',
+        'poster19.pdf',
     ]).pipe(gulp.dest('dist/'));
 });
 
