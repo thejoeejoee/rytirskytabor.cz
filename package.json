@@ -2,26 +2,27 @@
   "name": "rytirskytabor.cz",
   "title": "Rytirskytabor.cz",
   "version": "1.0.0",
-  "scripts": {
-    "deploy": "gulp build && gulp deploy"
-  },
   "license": {
     "type": "MIT",
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
   },
+  "scripts": {
+    "deploy": "gulp build && gulp deploy",
+    "build": "gulp build"
+  },
   "devDependencies": {
     "bootstrap": "^3.3.7",
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.26.7",
     "font-awesome": "^4.6.3",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.10",
-    "gulp-cli": "^1.4.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp-header": "^1.8.12",
     "gulp-less": "^3.5.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.4",
-    "jquery": "^3.0.0",
+    "jquery": "^3.5.1",
     "magnific-popup": "^1.1.0",
     "scrollreveal": "^3.4.0"
   },
