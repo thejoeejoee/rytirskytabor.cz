@@ -1,0 +1,92 @@
+% \input utf8-t1
+\documentclass[12pt,a4paper]{extarticle}
+
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{psvectorian}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+
+\usepackage[paper=a4paper,top=2cm,left=2.5cm,right=2.5cm,bottom=1cm]{geometry}
+
+\usepackage{aurical}
+\usepackage{inslrmaj}
+\usepackage{yfonts}
+\usepackage{type1cm}
+\usepackage{lettrine}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{transparent}
+
+\setcounter{secnumdepth}{1}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\bigskipamount}
+
+\newfontfamily{\xiberonnettt}{XiBeronne}
+\DeclareTextFontCommand{\textxib}{\xiberonnettt}
+
+\linespread{1.3}
+\pagestyle{empty}
+
+\setmainfont{Xenippa}
+%\setmainfont{XiBeronne}
+\input Zallman.fd
+\input Rothdn.fd
+\input EileenBl.fd
+\input Typocaps.fd
+
+\newcommand*\capitalInit{\usefont{U}{EileenBl}{xl}{n}}
+\newcommand*\romanCaps{\usefont{U}{Typocaps}{xl}{n}}
+\usepackage{background}
+\usepackage{eso-pic,graphicx}
+\backgroundsetup{
+	scale=1,
+	color=black,
+	opacity=0.95,
+	angle=180,
+	contents={\includegraphics[width=\paperwidth,height=\paperheight]{background.jpg}}%
+}
+
+\definecolor{myGray}{HTML}{22222A}
+\color{myGray}
+\renewcommand*{\psvectorianDefaultColor}{myGray}%
+
+% \renewcommand{\normalsize}{\fontsize{10}{12}\selectfont}
+
+\newcommand{\romanYear}{\xiberonnettt M\kern-0.14em M\kern-0.14em X\kern-0.14em X\kern-0.14em I\kern-0.14em I}
+
+\renewcommand*\ttdefault{dayrom}
+
+\begin{document}
+
+\begin{center}
+%\rput[r](-11pt,9pt){\psvectorian[color=black,height=1.1cm]{11}}%
+%\rput[l](15pt,9pt){\psvectorian[color=black,height=1.1cm,mirror]{11}}%
+{\textxib \bfseries \fontsize{32}{16}\selectfont Křivá stezka \romanYear}%
+\end{center}\vspace{-12pt}
+\begin{center}
+  \psvectorian[width=.8\textwidth]{86}
+\end{center}\vspace{4pt}
+
+{\large Drazí věrní!}\vspace{-10pt}
+\lettrine[lines=2,slope=0pt,findent=0pt,nindent=0pt,lraise=-0.2,loversize=0.5]{\capitalInit J}{iž} nastal čas! Jinoši a Panny, lide zbrojný i poddaný, každý kdos špetku naděje v~srdci má, žes ležení za parných dní rozbijeme, zaplesej! Dobré mysli buďte a ve vzpomínkách po zvuku rohu regentovu zahledejte, neb zježí se každý chlup na těle, kdyžs roh vzduch protne!
+
+\lettrine[lines=2,slope=0pt,findent=0pt,nindent=0pt,lraise=-0.2,loversize=0.5]{\capitalInit D}{ny} se již započaly prodlužovat a noci krátit, na nebi slunce jasné a paprsky jeho zemi budí, toť jasná znamení, žes klidu a odpočinku již bylo dosti. Nejen rostlinstvu a zvířeně i člověku je jasně dáno, že zaháleti nemá. Však lopota všedních dní odměněna jistě bude. Každému po jeho zásluhách. Tak i vy neleňte! Ducha svého i tělo tužte, mysl svou vědomostmi plňte a ruce pracovitosti a zručnosti učte. Kdos v~minulém ležení s~námi byl, jistě se rozvzpomene, žes bez práce nejsou koláče ba ani žádný pokrm jiný. 
+
+\lettrine[lines=2,slope=0pt,findent=0pt,nindent=0pt,lraise=-0.2,loversize=0.5]{\capitalInit D}{alší} ležení my v~měsíci srpnovém společně rozbijeme a důkladné přípravy i vy vykonati musíte. Po sedm dní společně dobrodružství zažívati budeme, méně než ležení minulé, však naplněno bude až po okraj. Tak po vzoru jiných druhů svých započněte přípravy, svůj spací vak oděv dobový k~loži svému si připravte, byste včasně vyraziti mohli. I~já meč u~lože svého mám, bych třímat jej ve chvíli kterékoliv mohl, pak vzpomínky z~ležení mi vždy na mysl vytanou. 
+
+\lettrine[lines=2,slope=0pt,findent=0pt,nindent=0pt,lraise=-0.2,loversize=0.5]{\capitalInit N}{elehké} dny před sebou každý má, já však věřím, že všeckny nástrahy překonáte a pak radostně v~ležení se shledáme. Kdož již posla mého zná, ať na nic nečeká, ale včasnou odpověď si připraví. Já budu v~napětí vaše odpovědi očekávat, žes naše řady neprořídnou, ale nová krev je zaplní. Pokud shledáte ve svých blízkých, žes rytířský duch jest s~nimi i je spravte o~našem ležení by i oni mohli stanout pod Korouhví Nejvyššího. Tak odkaz rytířův zůstane zachován, neb si jej mezi sebou předáme a žít bude dál. 
+
+
+\lettrine[lines=2,slope=0pt,findent=0pt,nindent=0pt,lraise=-0.2,loversize=0.5]{\capitalInit V}{ám} ostatním kéž ujištění dá Nejvyšší, ten jenž dává slunci svítit na obloze, jak svým věrným, tak lidu neznabožnému. Potřebujete-li ku rozhodnutí svému zvěděti cokoli, užijte všech vymožeností doby, u~mě vždy odpovědi dostanetež. Do té doby Pána našeho a Prvního mezi rytíři všemi, Ježíše Krista, vzývati budu, by v~dobrém utvrzoval a od zlého chránil všeckny vás!
+\begin{flushright}
+{\vspace{-8pt}\fontsize{24}{16}\selectfont Daniel}\\\vspace{6pt}
+\normalsize
+dáno v~tvrzi Litovel \\
+v~den svatého Eupafrodita L. P. \romanYear
+\end{flushright}
+\vfill
+\begin{center}
+  \psvectorian[width=.8\textwidth]{88}
+\end{center}
+\end{document}
